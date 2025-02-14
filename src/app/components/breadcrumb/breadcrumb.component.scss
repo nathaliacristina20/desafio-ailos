@@ -1,0 +1,17 @@
+:host {
+    nav {
+        display: flex;
+        margin-top: 5px;
+
+        ol {
+            display: flex;
+            font-size: 14px;
+            color: #889499;
+            font-family: "Exo 2";
+
+            span {
+                padding: 0px 5px;
+            }
+        }
+    }
+}
