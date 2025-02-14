@@ -1,0 +1,36 @@
+:host {
+    .btn {
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        background-color: #165C7D;
+        font-family: "Open sans";
+
+        &.small-btn {
+            padding: 0px 16px;
+            height: 32px;
+        }
+
+        &.medium-btn {
+            padding: 0px 24px;
+            height: 48px;
+        }
+
+        &.primary-btn {
+            &:hover {
+                background-color: #013F5C;
+            }
+        }
+
+        &.secondary-btn {
+            background-color: transparent;
+            border: 1px solid #165C7D;
+            color: #165C7D;
+            font-weight: bold;
+
+            &:hover {
+                background-color: #D0DEE5;
+            }
+        }
+    }
+}

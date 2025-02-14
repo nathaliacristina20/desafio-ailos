@@ -1,0 +1,9 @@
+<button class="btn" type="button" [attr.aria-label]="ariaLabel"
+    [ngClass]="{ 
+        'small-btn': size === buttonSizeEnum.SMALL, 
+        'medium-btn': size === buttonSizeEnum.MEDIUM ,
+        'primary-btn': buttonStyle === buttonStyleEnum.PRIMARY,
+        'secondary-btn': buttonStyle === buttonStyleEnum.SECONDARY,
+    }">
+    <ng-content></ng-content>
+</button>
