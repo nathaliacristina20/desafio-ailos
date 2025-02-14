@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { People } from '../../services/people.service';
 import { IconComponent } from '../icon/icon.component';
+import { People } from '../../interfaces/people.interface';
 
 @Component({
   selector: 'app-cpf-card',
