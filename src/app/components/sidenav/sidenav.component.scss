@@ -20,13 +20,7 @@
             }
         }
 
-        .material-symbols-outlined {
-            color: #fff;
-            font-size: 30px;
-            display: flex;
-        }
-
-        .material-symbols-outlined + .material-symbols-outlined {
+        app-icon + app-icon {
             margin-bottom: 40px;
         }
     }
