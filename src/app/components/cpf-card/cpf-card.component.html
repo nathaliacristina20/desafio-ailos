@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card__header">
+        <strong>Situação cadastral do CPF</strong>
+        <small>Consulta na Receita Federal</small>
+    </div>
+
+    <div class="card__line">
+        <span class="material-symbols-outlined">person</span>
+        <div>
+            <p class="label-name">Nome</p>
+            <p class="value">{{ people.name }}</p>
+        </div>
+    </div>
+
+    <div class="card__line">
+        <span class="material-symbols-outlined" [class.material-symbols-outlined--regular]="true">
+            {{ people.status ? 'check_circle' : 'error' }}
+        </span>
+        <div>
+            <div>
+                <p class="label-name">Situação do CPF</p>
+                <p class="value">{{ people.status ? 'Regular' : 'Irregular' }}</p>
+            </div>
+        </div>
+    </div>
+</div>
