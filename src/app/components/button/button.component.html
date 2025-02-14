@@ -4,6 +4,6 @@
         'medium-btn': size === buttonSizeEnum.MEDIUM ,
         'primary-btn': buttonStyle === buttonStyleEnum.PRIMARY,
         'secondary-btn': buttonStyle === buttonStyleEnum.SECONDARY,
-    }">
+    }" (click)="buttonClicked.emit()">
     <ng-content></ng-content>
 </button>

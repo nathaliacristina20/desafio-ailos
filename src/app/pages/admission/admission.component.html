@@ -1,0 +1,35 @@
+<div class="admission-page">
+    <div class="content">
+        <h2>Informe o CPF do futuro cooperado (a)</h2>
+        <p>
+            Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro
+            futuramente.
+        </p>
+        <p>
+            Digite apenas os números (sem pontos ou traços).
+        </p>
+
+        <form>
+            <app-input>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" [formControl]="cpfField" (keyup)="clearSuccess()" />
+                <small *ngIf="cpfField.errors">
+                    CPF inválido
+                </small>
+            </app-input>
+            <app-button (click)="search()">Consultar por CPF</app-button>
+        </form>
+
+        <app-card *ngIf="searchCpfSuccess && people" [people]="people"></app-card>
+    </div>
+
+    <app-footer>
+        <app-button *ngIf="searchCpfSuccess && people" [size]="buttonSizeEnum.MEDIUM">
+            Iniciar nova admissão
+        </app-button>
+
+        <app-button [size]="buttonSizeEnum.MEDIUM" [buttonStyle]="buttonStyleEnum.SECONDARY">
+            Dicas para abertura da conta
+        </app-button>
+    </app-footer>
+</div>

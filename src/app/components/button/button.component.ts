@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 export enum ButtonSize {
   SMALL = 'small',
@@ -24,4 +24,6 @@ export class ButtonComponent {
 
   public buttonSizeEnum = ButtonSize;
   public buttonStyleEnum = ButtonStyle;
+
+  @Output() buttonClicked = new EventEmitter<string>();
 }

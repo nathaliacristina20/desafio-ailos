@@ -3,11 +3,11 @@ import { IconComponent } from '../icon/icon.component';
 import { People } from '../../interfaces/people.interface';
 
 @Component({
-  selector: 'app-cpf-card',
+  selector: 'app-card',
   imports: [IconComponent],
-  templateUrl: './cpf-card.component.html',
-  styleUrl: './cpf-card.component.scss'
+  templateUrl: './card.component.html',
+  styleUrl: './card.component.scss'
 })
-export class CpfCardComponent {
+export class CardComponent {
   @Input() people!: People;
 }

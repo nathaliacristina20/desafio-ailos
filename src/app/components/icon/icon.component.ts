@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-icon',
   imports: [CommonModule],
   templateUrl: './icon.component.html',
+  styleUrl: './icon.component.scss',
 })
 export class IconComponent {
   @Input() icon = "";

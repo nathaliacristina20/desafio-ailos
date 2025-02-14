@@ -1,0 +1,13 @@
+:host {
+    footer {
+        height: 90px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+
+        app-button + app-button {
+            margin-left: 20px;
+        }
+    }
+}

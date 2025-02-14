@@ -10,6 +10,10 @@
             height: 32px;
             min-width: 300px;
             display: block;
+
+            &.ng-invalid {
+                border-color: #C13018;
+            }            
         }
 
         small {
