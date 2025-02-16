@@ -52,7 +52,7 @@ A cobertura de testes abrange a validação do formulário e se o serviço será
 
 ### Executando os Testes
 
-Para executar os testes unitários localmente, siga os passos abaixo:
+Para executar os testes unitários localmente, siga os passos abaixo:
 
    ```bash
    npm run test
