@@ -13,7 +13,7 @@
 
     main {
         height: 100%;        
-        background-color: #E8EFF2;
+        background-color: var(--background);
         display: flex;
         flex-direction: column;
     }

@@ -1,9 +1,9 @@
 :host {
     .card {
-        border: 1px solid #A7B0B5;
+        border: 1px solid var(--gray-3);
         padding: 25px;
         width: 300px;
-        background-color: #fff;
+        background-color: var(--white);
         box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 
         &__header {
@@ -12,7 +12,7 @@
             margin-bottom: 10px;
 
             small {
-                color: #A7B0B5;
+                color: var(--gray-3);
             }
         }
 
@@ -27,7 +27,7 @@
             div {
                 .label {
                     font-size: 12px;
-                    color: #A7B0B5;
+                    color: var(--gray-3);
                 }
 
                 .value {

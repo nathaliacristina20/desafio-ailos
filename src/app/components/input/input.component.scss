@@ -6,19 +6,19 @@
         }
 
         input {
-            border: 1px solid #A7B0B5;
+            border: 1px solid var(--gray-3);
             height: 32px;
             min-width: 300px;
             display: block;
 
             &.ng-invalid {
-                border-color: #C13018;
+                border-color: var(--danger);
             }            
         }
 
         small {
             position: absolute;
-            color: #C13018;
+            color: var(--danger);
             padding-top: 5px;
         }
     }

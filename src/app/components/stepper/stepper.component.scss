@@ -10,7 +10,7 @@
 
         &-name {
             font-size: 14px;
-            color: #A7B0B5;
+            color: var(--gray-3);
         }
 
         &-style {
@@ -22,22 +22,22 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            border: 2px solid #A7B0B5;
+            border: 2px solid var(--gray-3);
         }
 
         &--active {
             .step-circle {
-                border-color: #165C7D;
+                border-color: var(--ailos);
             }
 
             .step-name {
-                color: #165C7D;
+                color: var(--ailos);
             }
         }
 
         &-line {
             height: 2px;
-            background-color: #A7B0B5;
+            background-color: var(--gray-3);
             width: 60px;
         }
 

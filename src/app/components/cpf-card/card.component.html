@@ -5,7 +5,7 @@
     </div>
 
     <div class="card__line">
-        <app-icon icon="person" color="#889499" [size]="25"></app-icon>
+        <app-icon icon="person" color="var(--gray-4)" [size]="25"></app-icon>
         <div>
             <p class="label">Nome</p>
             <p class="value">{{ people.name }}</p>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="card__line">
-        <app-icon [icon]="people.status ? 'check_circle' : 'error'" [color]="people.status ? '#00C246' : '#889499'"
+        <app-icon [icon]="people.status ? 'check_circle' : 'error'" [color]="people.status ? 'var(--ailos-green)' : 'var(--gray-4)'"
             [size]="25"></app-icon>
         <div>
             <p class="label">Situação do CPF</p>

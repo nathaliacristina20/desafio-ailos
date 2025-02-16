@@ -1,9 +1,9 @@
 :host {
     .btn {
-        color: #fff;
+        color: var(--white);
         cursor: pointer;
         border: none;
-        background-color: #165C7D;
+        background-color: var(--ailos);
         font-family: "Open sans";
 
         &.small-btn {
@@ -18,18 +18,18 @@
 
         &.primary-btn {
             &:hover {
-                background-color: #013F5C;
+                background-color: var(--ailos-120);
             }
         }
 
         &.secondary-btn, &.tertiary-btn {
             background-color: transparent;
-            border: 1px solid #165C7D;
-            color: #165C7D;
+            border: 1px solid var(--ailos);
+            color: var(--ailos);
             font-weight: bold;
 
             &:hover {
-                background-color: #D0DEE5;
+                background-color: var(--ailos-20);
             }
         }
 

@@ -9,6 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class IconComponent {
   @Input() icon = "";
-  @Input() color = "#fff";
+  @Input() color = "var(--white)";
   @Input() size = 20;
 }
