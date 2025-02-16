@@ -42,6 +42,22 @@
  ┣ 📂 assets         # Imagens e ícones
 ```
 
+## Testes Unitários
+
+Este projeto inclui um teste unitário. Os testes foram implementados utilizando o framework [Jest](https://jestjs.io/) e a biblioteca [Testing Library](https://testing-library.com/).
+
+### Cobertura de Testes
+
+A cobertura de testes abrange a validação do formulário e se o serviço será chamado adequadamente
+
+### Executando os Testes
+
+Para executar os testes unitários localmente, siga os passos abaixo:
+
+   ```bash
+   npm run test
+```
+
 ## 📌 Contato
 ✉️ **Nathalia Cristina Gomes Oliveira** – [LinkedIn](https://www.linkedin.com/in/nathaliagomesoliveira/)  
 🐙 [GitHub](https://github.com/nathaliacristina20)  
