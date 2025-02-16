@@ -23,12 +23,12 @@
                 <app-button (click)="search()">Consultar por CPF</app-button>
             </form>
 
-            <app-card *ngIf="searchCpfSuccess && people" [people]="people"></app-card>
+            <app-card *ngIf="people" [people]="people"></app-card>
         </div>
     </div>
 
     <app-action-bar>
-        <app-button *ngIf="searchCpfSuccess && people" [size]="buttonSizeEnum.MEDIUM">
+        <app-button *ngIf="people" [size]="buttonSizeEnum.MEDIUM">
             Iniciar nova admissão
         </app-button>
 

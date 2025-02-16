@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IconComponent } from '../icon/icon.component';
-import { People } from '../../interfaces/people.interface';
+import { IPeople } from '../../interfaces/people.interface';
 
 @Component({
   selector: 'app-card',
@@ -9,5 +9,5 @@ import { People } from '../../interfaces/people.interface';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() people!: People;
+  @Input() people!: IPeople;
 }
