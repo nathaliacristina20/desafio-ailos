@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { ButtonSize, ButtonStyle } from '../button/button.component';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-action-bar',
   imports: [],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  templateUrl: './action-bar.component.html',
+  styleUrl: './action-bar.component.scss'
 })
-export class FooterComponent {
+export class ActionBarComponent {
   public buttonSizeEnum = ButtonSize;
   public buttonStyleEnum = ButtonStyle;
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FooterComponent } from '../../components/footer/footer.component';
+import { ActionBarComponent } from '../../components/action-bar/action-bar.component';
 import { ButtonComponent, ButtonSize, ButtonStyle } from '../../components/button/button.component';
 import { InputComponent } from '../../components/input/input.component';
 import { CardComponent } from '../../components/cpf-card/card.component';
@@ -12,7 +12,7 @@ import { IStep } from '../../interfaces/stepper.interface';
 
 @Component({
   selector: 'app-admission',
-  imports: [FooterComponent, StepperComponent, ButtonComponent, InputComponent, CardComponent, FormsModule, ReactiveFormsModule, CommonModule],
+  imports: [ActionBarComponent, StepperComponent, ButtonComponent, InputComponent, CardComponent, FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './admission.component.html',
   styleUrl: './admission.component.scss'
 })

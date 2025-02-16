@@ -1,10 +1,10 @@
 <button class="btn" type="button" [attr.aria-label]="ariaLabel"
     [ngClass]="{ 
-        'small-btn': size === buttonSizeEnum.SMALL, 
-        'medium-btn': size === buttonSizeEnum.MEDIUM ,
-        'primary-btn': buttonStyle === buttonStyleEnum.PRIMARY,
-        'secondary-btn': buttonStyle === buttonStyleEnum.SECONDARY,
-        'tertiary-btn': buttonStyle === buttonStyleEnum.TERTIARY,
+        'btn--small': size === buttonSizeEnum.SMALL, 
+        'btn--medium': size === buttonSizeEnum.MEDIUM ,
+        'btn--primary': buttonStyle === buttonStyleEnum.PRIMARY,
+        'btn--secondary': buttonStyle === buttonStyleEnum.SECONDARY,
+        'btn--tertiary': buttonStyle === buttonStyleEnum.TERTIARY,
     }" (click)="buttonClicked.emit()">
     <ng-content></ng-content>
 </button>

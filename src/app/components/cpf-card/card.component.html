@@ -7,8 +7,8 @@
     <div class="card__line">
         <app-icon icon="person" color="var(--gray-4)" [size]="25"></app-icon>
         <div>
-            <p class="label">Nome</p>
-            <p class="value">{{ people.name }}</p>
+            <p class="card__line__label">Nome</p>
+            <p class="card__line__value">{{ people.name }}</p>
         </div>
     </div>
 
@@ -16,8 +16,8 @@
         <app-icon [icon]="people.status ? 'check_circle' : 'error'" [color]="people.status ? 'var(--ailos-green)' : 'var(--gray-4)'"
             [size]="25"></app-icon>
         <div>
-            <p class="label">Situação do CPF</p>
-            <p class="value">{{ people.status ? 'Regular' : 'Irregular' }}</p>
+            <p class="card__line__label">Situação do CPF</p>
+            <p class="card__line__value">{{ people.status ? 'Regular' : 'Irregular' }}</p>
         </div>
     </div>
 </div>

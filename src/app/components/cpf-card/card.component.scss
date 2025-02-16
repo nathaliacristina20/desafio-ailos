@@ -24,15 +24,13 @@
                 margin-right: 15px;
             }
 
-            div {
-                .label {
-                    font-size: 12px;
-                    color: var(--gray-3);
-                }
+            &__label {
+                font-size: 12px;
+                color: var(--gray-3);
+            }
 
-                .value {
-                    font-size: 14px;
-                }
+            &__value {
+                font-size: 14px;
             }
         }
 

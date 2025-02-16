@@ -1,55 +1,55 @@
 :host {
     .steps {
         display: flex;
-    }
 
-    .step {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &-name {
-            font-size: 14px;
-            color: var(--gray-3);
-        }
-
-        &-style {
+        .step {
             display: flex;
+            flex-direction: column;
             align-items: center;
-        }
 
-        &-circle {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 2px solid var(--gray-3);
-        }
+            &__style {
+                display: flex;
+                align-items: center;
 
-        &--active {
-            .step-circle {
-                border-color: var(--ailos);
+                &__line {
+                    height: 2px;
+                    background-color: var(--gray-3);
+                    width: 60px;
+                }
+
+                &__circle {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid var(--gray-3);
+                }
             }
 
-            .step-name {
-                color: var(--ailos);
+            &__name {
+                font-size: 14px;
+                color: var(--gray-3);
             }
-        }
 
-        &-line {
-            height: 2px;
-            background-color: var(--gray-3);
-            width: 60px;
-        }
+            &--active {
+                .step__style__circle {
+                    border-color: var(--ailos);
+                }
 
-        &.first-step {
-            .right-line {
-                background-color: transparent;
+                .step__name {
+                    color: var(--ailos);
+                }
             }
-        }
 
-        &.last-step {
-            .left-line {
-                background-color: transparent;
+            &.first-step {
+                .step__style__line--right {
+                    background-color: transparent;
+                }
+            }
+
+            &.last-step {
+                .step__style__line--left {
+                    background-color: transparent;
+                }
             }
         }
     }
