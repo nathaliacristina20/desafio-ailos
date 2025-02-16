@@ -22,7 +22,7 @@
             }
         }
 
-        &.secondary-btn {
+        &.secondary-btn, &.tertiary-btn {
             background-color: transparent;
             border: 1px solid #165C7D;
             color: #165C7D;
@@ -31,6 +31,10 @@
             &:hover {
                 background-color: #D0DEE5;
             }
+        }
+
+        &.tertiary-btn {
+            border-radius: 40px;
         }
     }
 }

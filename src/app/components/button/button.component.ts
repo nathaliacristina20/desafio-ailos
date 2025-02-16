@@ -9,6 +9,7 @@ export enum ButtonSize {
 export enum ButtonStyle {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
+  TERTIARY = 'tertiary',
 }
 
 @Component({

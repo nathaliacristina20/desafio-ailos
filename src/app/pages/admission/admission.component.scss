@@ -5,12 +5,19 @@
 
     .admission-page {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        flex-direction: column;
         width: 100%;
 
         .content {
             padding: 30px;
+
+            app-stepper {
+                padding-bottom: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
             form {
                 display: flex;

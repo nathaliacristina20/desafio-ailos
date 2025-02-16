@@ -1,26 +1,30 @@
 <div class="admission-page">
     <div class="content">
-        <h2>Informe o CPF do futuro cooperado (a)</h2>
-        <p>
-            Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro
-            futuramente.
-        </p>
-        <p>
-            Digite apenas os números (sem pontos ou traços).
-        </p>
+        <app-stepper [steps]="steps"></app-stepper>
 
-        <form>
-            <app-input>
-                <label for="cpf">CPF</label>
-                <input type="text" name="cpf" id="cpf" [formControl]="cpfField" (keyup)="clearSuccess()" />
-                <small *ngIf="cpfField.errors">
-                    CPF inválido
-                </small>
-            </app-input>
-            <app-button (click)="search()">Consultar por CPF</app-button>
-        </form>
+        <div>
+            <h2>Informe o CPF do futuro cooperado (a)</h2>
+            <p>
+                Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro
+                futuramente.
+            </p>
+            <p>
+                Digite apenas os números (sem pontos ou traços).
+            </p>
 
-        <app-card *ngIf="searchCpfSuccess && people" [people]="people"></app-card>
+            <form>
+                <app-input>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" [formControl]="cpfField" (keyup)="clearSuccess()" />
+                    <small *ngIf="cpfField.errors">
+                        CPF inválido
+                    </small>
+                </app-input>
+                <app-button (click)="search()">Consultar por CPF</app-button>
+            </form>
+
+            <app-card *ngIf="searchCpfSuccess && people" [people]="people"></app-card>
+        </div>
     </div>
 
     <app-footer>

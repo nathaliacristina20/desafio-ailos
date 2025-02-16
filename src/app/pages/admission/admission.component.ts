@@ -7,10 +7,12 @@ import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angu
 import { People } from '../../interfaces/people.interface';
 import { PeopleService } from '../../services/people.service';
 import { CommonModule } from '@angular/common';
+import { StepperComponent } from '../../components/stepper/stepper.component';
+import { IStep } from '../../interfaces/stepper.interface';
 
 @Component({
   selector: 'app-admission',
-  imports: [FooterComponent, ButtonComponent, InputComponent, CardComponent, FormsModule, ReactiveFormsModule, CommonModule],
+  imports: [FooterComponent, StepperComponent, ButtonComponent, InputComponent, CardComponent, FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './admission.component.html',
   styleUrl: './admission.component.scss'
 })
@@ -22,6 +24,25 @@ export class AdmissionComponent {
 
   public searchCpfSuccess = false;
   public people: People | undefined = undefined;
+
+  public steps: IStep[] = [
+    {
+      name: "Início",
+      active: true,
+    },
+    {
+      name: "Documentos",
+      active: false,
+    }, 
+    {
+      name: "Dados cadastrais",
+      active: false,
+    },
+    {
+      name: "Admissão",
+      active: false,
+    }
+  ];
 
   constructor(private peopleService: PeopleService) { }
 
