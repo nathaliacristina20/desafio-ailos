@@ -7,7 +7,7 @@
             <div class="step-line left-line"></div>
         </div>
         <div class="step-name">
-            <p>{{ step.name }}</p>
+            <p>{{ step.name | slice: 0:15 }}</p>
         </div>
     </div>
 </div>
