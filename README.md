@@ -1,7 +1,8 @@
 # 📌 Ailos | Desafio técnico - Angular
 
 ## 📷 Preview
-*(Coloque uma imagem ou GIF da interface se possível)*
+
+<img src="https://i.postimg.cc/mrGxNN8m/Captura-de-tela-2025-02-16-185941.png" alt="Imagem do Projeto" width="600" />
 
 ---
 
@@ -15,14 +16,17 @@
 1. Clone o repositório:
    ```sh
    git clone https://github.com/nathaliacristina20/desafio-ailos
+   ```
 
 1. Instale as dependências:
    ```sh
    npm install
+   ```
    
 1. Inicie o projeto:
    ```sh
    npm run dev
+   ```
    
 
 ## 🏗️ Estrutura do Projeto
