@@ -28,12 +28,14 @@
 ## 🏗️ Estrutura do Projeto
 ```bash
 📂 src
- ┣ 📂 components  # Componentes reutilizáveis
- ┣ 📂 pages       # Páginas principais
- ┣ 📂 styles      # Estilos globais e variáveis
- ┣ 📂 assets      # Imagens e ícones
- ┣ 📂 services    # Requisições e integração com APIs
- ┗ 📂 interfaces  # Definições de tipos e interfaces
+ ┣ 📂 app
+ ┃ ┣ 📂 components  # Componentes reutilizáveis
+ ┃ ┣ 📂 pages       # Páginas principais
+ ┃ ┣ 📂 styles      # Estilos globais e variáveis
+ ┃ ┃ ┗ 📜 variables.scss  # Variáveis de cores
+ ┃ ┣ 📂 services    # Requisições e integração com APIs
+ ┃ ┣ 📂 interfaces  # Definições de tipos e interfaces
+ ┣ 📂 assets         # Imagens e ícones
 ```
 
 ## 📌 Contato
